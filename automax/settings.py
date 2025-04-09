@@ -31,10 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = env('SECRET_KEY')
 SECRET_KEY = 'django-insecure-^*3@mwn!r1q12x@x%o5#js6o2+f&!+bt1=%15-$)c*(utykugc'
-<<<<<<< HEAD
-=======
-# cc6e8380ebe402e32a97eb9ee95218a2
->>>>>>> 7054ba0c (jfjf)
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =True
@@ -42,11 +39,9 @@ DEBUG =True
 
 # ALLOWED_HOSTS = ['https://motomarket-24fq.onrender.com','motomarket-24fq.onrender.com','127.0.0.1:8000','127.0.0.1',]
 # ALLOWED_HOSTS = ['https://motomarket-1.onrender.com/','motomarket-1.onrender.com/','motomarket-1.onrender.com','127.0.0.1:8000','127.0.0.1',]
-<<<<<<< HEAD
+
 ALLOWED_HOSTS = ['motomarket-1.onrender.com', 'localhost', '127.0.0.1']
-=======
-ALLOWED_HOSTS = ['motomart.onrender.com', 'localhost', '127.0.0.1']
->>>>>>> 7054ba0c (jfjf)
+
 
 
 # Application definition
