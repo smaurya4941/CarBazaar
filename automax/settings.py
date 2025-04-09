@@ -40,7 +40,7 @@ DEBUG =True
 # ALLOWED_HOSTS = ['https://motomarket-24fq.onrender.com','motomarket-24fq.onrender.com','127.0.0.1:8000','127.0.0.1',]
 # ALLOWED_HOSTS = ['https://motomarket-1.onrender.com/','motomarket-1.onrender.com/','motomarket-1.onrender.com','127.0.0.1:8000','127.0.0.1',]
 
-ALLOWED_HOSTS = ['motomarket-1.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['carbazaar-w870.onrender.com', 'localhost', '127.0.0.1']
 
 
 
