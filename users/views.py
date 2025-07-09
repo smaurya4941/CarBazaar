@@ -8,6 +8,11 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from mainapp.models import Listing
 from .forms import UserForm,ProfileForm,LocationForm
+from django.core.mail import send_mail
+from django.http import HttpResponse
+from  automax.settings import EMAIL_HOST_USER
+# def send_email_view(request):
+    
 def login_view(request):
     if request.method=='POST':
         login_form=AuthenticationForm(request=request,data=request.POST)
@@ -56,6 +61,14 @@ class RegisterView(View):
             user.refresh_from_db()
             login(request,user)
             messages.success(request,f'User {user.username} registered Successfully')
+            send_mail(
+                subject='Welcome!',
+                message='Thanks for signing up!',
+                from_email='smaurya4941@gmail.com',
+                recipient_list=['sachinmaurya4941@gmail.com'],
+                fail_silently=False,
+            )
+            # return HttpResponse("Email sent successfully.")
             return redirect('home')
         else:
             messages.error(request,f'An error occured trying to register')
